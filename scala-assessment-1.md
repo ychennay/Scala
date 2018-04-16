@@ -33,8 +33,7 @@ var statement = "My dog's name is " + name
 statement: String = My dog's name is Sammy
 ```
 
-#### 4. Use Scala to find out if the letter sequence ``"xyz"`` is contained in:
-``"sadfjshfjyuyxyzjkfuidkjklhasyysdfk"``
+#### 4. Use Scala to find out if the letter sequence ``"xyz"`` is contained in: `"sadfjshfjyuyxyzjkfuidkjklhasyysdfk"`
 
 ```Scala
 val key = "xyz"
