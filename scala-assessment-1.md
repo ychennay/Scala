@@ -75,3 +75,71 @@ myTuple._4._3
 ```
 res7: Int = 6
 ```
+
+# Collections
+
+#### 1. Can you figure out what method you can use to find out if the list `List(1,2,3,4,5)` contains the number 3?
+```Scala
+val myList = List(1,2,3,4)
+myList.contains(3)
+```
+```
+Boolean = true
+```
+
+#### 2. How can you add all the elements of the previous list?
+
+```Scala
+myList.sum
+```
+```
+Int = 10
+```
+
+#### 3. Create an Array of all the odd numbers from 0 to 15
+
+```Scala
+Array.range(1, 15, 2)
+```
+```
+Array[Int] = Array(1, 3, 5, 7, 9, 11, 13)
+```
+
+#### 4. What are the unique elements in the list: `List(2,3,1,4,5,6,6,1,2)`?
+
+```Scala
+List(2,3,1,4,5,6,6,1,2).toSet
+```
+```
+scala.collection.immutable.Set[Int] = Set(5, 1, 6, 2, 3, 4)
+```
+
+#### 5. Create a mutable map that maps together Names to Ages. It should have the following key value pairs:
+```
+Sammy, 3
+Frankie, 7
+John, 45
+```
+
+```Scala
+val myMap = collection.mutable.Map(("Sammy", 3), ("Frankie", 7), ("John", 45))
+```
+```
+myMap: scala.collection.mutable.Map[String,Int] = Map(Sammy -> 3, Frankie -> 7, John -> 45)
+```
+
+##### 5a. Print out all the keys
+```Scala
+myMap.keys
+```
+```
+Iterable[String] = Set(Sammy, Frankie, John)
+```
+
+##### 5b. Add the key value pair `("Mike",27)`:
+```Scala
+myMap += ("Mike" -> 27)
+```
+```
+myMap.type = Map(Sammy -> 3, Mike -> 27, Frankie -> 7, John -> 45)
+```
