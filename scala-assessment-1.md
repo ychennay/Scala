@@ -143,3 +143,44 @@ myMap += ("Mike" -> 27)
 ```
 myMap.type = Map(Sammy -> 3, Mike -> 27, Frankie -> 7, John -> 45)
 ```
+
+# Functions
+
+##### 1. Check for single even: write a function that takes in an integer and returns a Boolean indicating whether or not it is even.
+
+```Scala
+def checkForSingleEven(target: Int): Boolean = {
+  return (target % 2 == 0)
+}
+```
+
+##### 2. Check for Evens in a List: Write a function that returns True if there is an event number inside of a List, otherwise, return False.
+
+```scala
+def checkForEvensInList(numbers: List[Int]): Boolean = {
+  for (num <- numbers){
+    if (num % 2 > 0){
+      return false
+    }
+  }
+  return true
+}
+```
+
+##### 3. Lucky Number Seven: Take in a list of integers and calculate their sum. However, sevens are lucky and they should be counted twice, meaning their value is 14 for the sum. Assume the list isn't empty.
+```Scala
+def lucky(nums: List[Int]): Int = {
+  var output = 0
+  for (num <- nums){
+    if (num == 7){
+      output = output + 14
+    } else{
+      output = output + num
+    }
+  }
+  return output
+}
+```
+
+
+####
